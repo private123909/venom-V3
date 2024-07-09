@@ -10,9 +10,9 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('TOKEM')
+bot = telebot.TeleBot('7279800328:AAHnWB8uC4wgN6zNPXrwTWXzRr55oZtWEBg')
 # Admin user IDs
-admin_id = {"5588464519"}
+admin_id = {"1448501368"}
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -21,8 +21,8 @@ KEY_FILE = "keys.json"
 
 # Cooldown settings
 COOLDOWN_TIME = 0  # in seconds
-CONSECUTIVE_ATTACKS_LIMIT = 2
-CONSECUTIVE_ATTACKS_COOLDOWN = 240  # in seconds
+CONSECUTIVE_ATTACKS_LIMIT = 5
+CONSECUTIVE_ATTACKS_COOLDOWN = 3  # in seconds
 
 # In-memory storage
 users = {}
@@ -324,15 +324,14 @@ def welcome_plan(message):
     response = f'''{user_name}, 𝐏𝐋𝐀𝐍 𝐃𝐄𝐊𝐇𝐄𝐆𝐀 𝐓𝐔 𝐆𝐀𝐑𝐄𝐄𝐁😂:
 
 VIP 🌟:
--> Attack time: 180 seconds
+-> Attack time: 500 seconds
 -> After attack limit: 5 minutes
--> Concurrent attacks: 3
+-> Concurrent attacks: 300
 
 𝐓𝐄𝐑𝐈 𝐀𝐔𝐊𝐀𝐃 𝐒𝐄 𝐁𝐀𝐇𝐀𝐑 💸:
 𝐃𝐚𝐲: 150 𝐫𝐬
 𝐖𝐞𝐞𝐤: 600 𝐫𝐬
 𝐌𝐨𝐧𝐓𝐡: 1100 𝐫𝐬 
-@VenomCHA7
 '''
     bot.reply_to(message, response)
 
